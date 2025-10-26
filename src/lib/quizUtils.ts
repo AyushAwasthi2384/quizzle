@@ -19,7 +19,7 @@ export const OPTION_STYLES = [
     name: 'Yellow',
     shape: 'square',
     icon: '■',
-    bgClass: 'bg-yellow-500',
+    bgClass: 'bg-yellow-300',
   },
   {
     color: 'hsl(142 71% 45%)',
