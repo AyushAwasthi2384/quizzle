@@ -28,7 +28,7 @@ const optionColors = [
     text: 'text-red-900',
     placeholder: 'placeholder:text-red-500/70',
     focusRing: 'focus:border-red-500 focus:ring-red-500/20',
-    Icon: Triangle, // Kahoot-style shape
+    Icon: Circle, // Kahoot-style shape
   },
   {
     // Blue
@@ -37,7 +37,7 @@ const optionColors = [
     text: 'text-blue-900',
     placeholder: 'placeholder:text-blue-500/70',
     focusRing: 'focus:border-blue-500 focus:ring-blue-500/20',
-    Icon: Square, // (Rhombus/Diamond isn't in lucide, Square is close)
+    Icon: Triangle, // (Rhombus/Diamond isn't in lucide, Square is close)
   },
   {
     // Yellow
@@ -46,7 +46,7 @@ const optionColors = [
     text: 'text-yellow-900',
     placeholder: 'placeholder:text-yellow-500/70',
     focusRing: 'focus:border-yellow-500 focus:ring-yellow-500/20',
-    Icon: Circle,
+    Icon: Square,
   },
   {
     // Green
@@ -319,7 +319,7 @@ const HostCreate = () => {
                             <Check className="w-6 h-6" />
                           ) : (
                             // Show the shape icon when not selected
-                            <Icon className="w-6 h-6" />
+                            <Icon className={`w-6 h-6 ${oIndex === 3 && "rotate-45"}`} />
                           )}
                         </div>
                         {/* This is the colored input field */}
